@@ -153,6 +153,7 @@ response JSON:
 
 #### PUT /articles/{id}
 Updates an article depending on id
+### Must add header "Content-type: application/x-www-form-urlencoded"
 
 request JSON:
 ```
@@ -174,7 +175,6 @@ response JSON:
 
 #### DELETE /articles/{id}
 Deletes an article depending on id
-## Must add header "Content-type: application/x-www-form-urlencoded"
 
 response JSON:
 ```
