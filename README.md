@@ -151,6 +151,27 @@ response JSON:
 }
 ```
 
+#### PUT /articles/{id}
+Updates an article depending on id
+
+request JSON:
+```
+{
+    "title": "test",
+    "body": "test test test test test test test test test test test test test test test "
+}
+```
+response JSON:
+```
+{
+    "id": 7,
+    "title": "test",
+    "body": "test test test test test test test test test test test test test test test",
+    "created_at": "2018-03-06 18:21:18",
+    "updated_at": "2018-03-08 20:20:42"
+}
+```
+
 #### DELETE /articles/{id}
 Deletes an article depending on id
 
