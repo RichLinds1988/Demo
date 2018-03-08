@@ -18,14 +18,13 @@ Base URL: http://45.55.45.146/demo2/api/
 #### POST /register  
 Registers new user
 ```
-
 {
 	"name": "Richard", 
 	"email": "richard@test.com", 
 	"password": "test123", 
 	"password_confirmation": "test123"
 }
-
+```
 #### POST /login  
 Login with user info
 ```
