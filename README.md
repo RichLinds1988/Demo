@@ -13,7 +13,7 @@ Base URL: http://45.55.45.146/demo2/api/
 
 ## Routes
 
-### Products
+### Users
 
 #### POST /register  
 Registers new user
@@ -73,6 +73,8 @@ response JSON:
     "data": "User logged out."
 }
 ```
+### Articles
+
 ### The following routes require a Bearer token created during login in the request header.
 ### Alternatively, you can send an attribute "api_token" in the payload.
 
