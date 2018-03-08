@@ -28,13 +28,13 @@ Registers new user
 #### POST /login  
 Login with user info
 ```
-
 {
 	"name": "Richard",
 	"password": "test123"
 }
-
+```
 response JSON:
+```
 {
     "data": {
         "id": 12,
@@ -45,24 +45,24 @@ response JSON:
         "api_token": "h8iESR74ZT9BE77DrahjT9CF4qKNjnbuFGrgzcwhNZ3gQPeCdbfjr8E670Sm"
     }
 }
-
+```
 #### POST /logout  
 Logs out current user
-```
 
 response JSON:
-
+```
 {
     "data": "User logged out."
 }
-
+```
 ### The following routes require a Bearer token created during login in the request header.
 ### Alternatively, you can send an attribute "api_token" in the payload.
 
 #### GET /articles  
 Returns a list of articles
-```
+
 response JSON:
+```
 [
     {
         "id": 2,
@@ -93,12 +93,12 @@ response JSON:
         "updated_at": "2018-03-06 16:21:18"
     }
 ]
-
+```
 #### GET /articles/{id}  
 Returns a specific article depending on ID
-```
 
 response JSON:
+```
 [
     {
         "id": 2,
@@ -108,18 +108,20 @@ response JSON:
         "updated_at": "2018-03-06 16:21:18"
     }
 ]
-
+```
 
 #### POST /articles
 Creates a new article
-```
+
 request JSON:
+```
 {
     "title": "Lorem",
     "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
 }
-
+```
 response JSON:
+```
 {
     "title": "Lorem",
     "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -127,4 +129,4 @@ response JSON:
     "created_at": "2018-03-08 18:01:54",
     "id": 53
 }
-
+```
