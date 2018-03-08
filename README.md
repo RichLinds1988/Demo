@@ -17,16 +17,34 @@ Base URL: http://45.55.45.146/demo2/api/
 
 #### POST /register  
 Registers new user
+
+request JSON:
 ```
 {
-	"name": "Richard", 
+	"name": "test test", 
 	"email": "richard@test.com", 
 	"password": "test123", 
 	"password_confirmation": "test123"
 }
 ```
+
+response JSON:
+```
+{
+    "data": {
+        "name": "test test",
+        "email": "richard@test.com",
+        "updated_at": "2018-03-05 18:12:11",
+        "created_at": "2018-03-05 18:12:11",
+        "id": 14,
+        "api_token": "TsqxBvZa7KMjR7JJ1XG5GmBBbjilJQhSlJfp3KSsWceo4yUYIaVnS0hI2lqU"
+    }
+}
+```
 #### POST /login  
 Login with user info
+
+request JSON:
 ```
 {
 	"name": "Richard",
