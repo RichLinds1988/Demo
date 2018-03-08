@@ -148,3 +148,14 @@ response JSON:
     "id": 53
 }
 ```
+
+#### DELETE /articles/{id}
+Deletes an article depending on id
+
+response JSON:
+```
+{
+    "Warning Message": "Article successfully deleted!"
+}
+```
+

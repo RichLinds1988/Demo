@@ -34,7 +34,8 @@ class ArticleController extends Controller
     public function delete(Article $article)
     {
         $article->delete();
-
-        return response()->json(null, 204);
+		$data = array("Warning Message" => "Article successfully deleted!");
+		
+        return response()->json($data, 200);
     }
 }
